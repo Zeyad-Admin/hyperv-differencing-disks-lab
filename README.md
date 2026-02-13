@@ -1,4 +1,4 @@
-# &nbsp;1.2 – Creating and Configuring Differencing Disks (Hyper-V)
+#  1.2 – Creating and Configuring Differencing Disks (Hyper-V)
 
 # Overview
 
@@ -60,7 +60,17 @@
 
 # Network: Default Switch
 
+
+
+# !\[VM Generation](screenshots/01-parent-vm-generation.png)
+
+# !\[VM Memory](screenshots/02-parent-vm-memory.png)
+
+# !\[VM Summary](screenshots/05-parent-vm-summary.png)
+
 # 
+
+
 
 # Step 2: Create Parent Virtual Disk
 
@@ -79,6 +89,14 @@
 # 
 
 # Disk Name: Parent.vhdx
+
+
+
+!\[Parent VHDX Settings](screenshots/03-parent-vhdx-settings.png)
+
+!\[Parent VHDX Location](screenshots/11-parent-vhdx-location.png)
+
+
 
 # 
 
@@ -100,6 +118,12 @@
 
 # Log in and reach the Windows desktop
 
+
+
+!\[Installation Options ISO](screenshots/04-installation-options-iso.png)
+
+
+
 # 
 
 # Step 4: Fully Patch the Parent Server
@@ -119,6 +143,14 @@
 # 
 
 # Verify the system is fully up to date
+
+
+
+!\[Windows Update In Progress](screenshots/06-windows-update-in-progress.png)
+
+!\[Windows Up To Date](screenshots/07-windows-up-to-date.png)
+
+
 
 # 
 
@@ -154,6 +186,12 @@
 
 # Set Shutdown after completion
 
+
+
+!\[Sysprep Configuration](screenshots/08-sysprep-configuration.png)
+
+
+
 # 
 
 # Step 6: Delete Parent VM (Keep Disk)
@@ -170,7 +208,13 @@
 
 # Confirm that Parent.vhdx was not deleted
 
-# 
+
+
+# !\[Delete Parent VM](screenshots/09-delete-parent-vm.png)
+
+# !\[Parent VM Deleted](screenshots/10-parent-vm-deleted-confirmation.png)
+
+
 
 # Step 7: Set Parent Disk to Read-Only
 
@@ -185,6 +229,12 @@
 # 
 
 # Enable Read-only
+
+
+
+!\[Parent Disk Read Only](screenshots/12-parent-disk-readonly.png)
+
+
 
 # 
 
@@ -211,6 +261,12 @@
 # 
 
 # Parent Disk: Parent.vhdx
+
+
+
+!\[Differencing Disk Parent Selected](screenshots/13-differencing-disk-parent-selected.png)
+
+
 
 # 
 
@@ -244,13 +300,25 @@
 
 # Task 3: Merge Differencing Disk (Break Parent Dependency)
 
+
+
+!\[Attach Differencing Disk](screenshots/14-mgmt-attach-differencing-disk.png)
+
+!\[Differencing Disk Attached](screenshots/15-mgmt-diff-disk-attached.png)
+
+!\[MGMT VM Running](screenshots/16-mgmt-vm-running.png)
+
+
+
 # Step 10: Shut Down Child VM
 
 # 
 
 # Fully shut down the MGMT virtual machine
 
-# 
+# !\[MGMT VM Shutdown](screenshots/17-mgmt-vm-shutdown.png)
+
+
 
 # Step 11: Merge the Differencing Disk
 
@@ -274,7 +342,11 @@
 
 # Specify a new VHDX name
 
-# 
+# !\[Merge Differencing Disk](screenshots/18-merge-differencing-disk.png)
+
+# !\[Merge Summary](screenshots/19-merge-summary-new-disk.png)
+
+
 
 # Step 12: Attach Merged Disk
 
@@ -290,7 +362,11 @@
 
 # Start the MGMT VM
 
-# 
+# !\[Merged VHDX Created](screenshots/20-merged-vhdx-created.png)
+
+# !\[Merged Disk Attached](screenshots/21-mgmt-vm-merged-disk-attached.png)
+
+
 
 # Final Summary
 
